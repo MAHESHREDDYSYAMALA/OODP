@@ -1,0 +1,10 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+float base,exponent;
+cout<<"the base and exponentis :"<<flush;
+cin>>base>>exponent;
+cout<<"the power of the number is:"<<exponent<<flush;
+return 0;
+}

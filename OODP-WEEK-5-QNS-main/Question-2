@@ -1,0 +1,30 @@
+#include <iostream>
+using namespace std;
+
+class AddAmount
+{
+    int amount;
+    public:
+    AddAmount()
+    {
+        amount = 66;
+    }
+
+    AddAmount(int a)
+    {
+        amount = 66;
+        amount = a+amount;
+    }
+
+    ~AddAmount()
+    {
+        cout << amount << endl;
+    }
+};
+
+int main()
+{
+    AddAmount a1;
+    AddAmount a2(6);
+    return 0;
+}

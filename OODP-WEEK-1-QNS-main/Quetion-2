@@ -1,0 +1,16 @@
+#include<iostream>
+using namespace std;
+void result(int N)
+{
+for(int num=1000;num<=N;num++)
+{
+if(num%8==0&&num%s==0)
+{
+cout<<num<<""}}}
+int main()
+{
+int N=2000
+result(N);
+return 0;
+}
+

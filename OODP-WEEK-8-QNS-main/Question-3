@@ -1,0 +1,44 @@
+#include <iostream>
+using namespace std;
+
+class Reddy;
+class mahesh
+{
+    int num1;
+
+public:
+    mahesh()
+    {
+        cout << "Enter number 1 : " << endl;
+        cin >> num1;
+    }
+    friend void sumof(mahesh a, Reddy b);
+};
+
+class Reddy
+{
+    int num2;
+
+public:
+    Reddy()
+    {
+        cout << "Enter number 2 : " << endl;
+        cin >> num2;
+    }
+    friend void sumof(mahesh a, Reddy b);
+};
+
+void sumof(mahesh a, Reddy b)
+{
+    cout << "Sum of number 1 and number 2 is = " << a.num1 + b.num2 << endl;
+}
+
+int main()
+{
+    mahesh obj1;
+    Reddy obj2;
+
+    sumof(obj1, obj2);
+
+    return 0;
+}
